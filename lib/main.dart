@@ -6,6 +6,10 @@ final counterProvider = StateProvider((ref) {
   return 0;
 });
 
+final counterProviderAutoDispose = StateProvider.autoDispose((ref) {
+  return 0;
+});
+
 void main() {
   runApp(
     // For widgets to be able to read providers, we need to wrap the entire
@@ -28,6 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
