@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_counter_app_with_riverpod/home_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+final counterProvider = StateProvider((ref) {
+  return 0;
+});
+
 void main() {
   runApp(
     // For widgets to be able to read providers, we need to wrap the entire
